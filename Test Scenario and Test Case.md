@@ -15,7 +15,7 @@ And User filled the Password with correct terms. <br />
 And User clicks the checkbox of Email preferences. <br />
 And User has successfully verify the account with verification challenge. <br />
 And User has clicks the Create account button. <br />
-Then User should directed to Launch Code page. <br />
+Then User should directed to Launch page. <br />
 And User should received Launch Code at Email. <br />
 When User filled the form with correct Launch Code. <br />
 Then User should see "Welcome to GitHub" text. <br />
@@ -81,7 +81,7 @@ When User clicks the select menu button. <br />
 And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
-And User directed to the Code page. <br />
+And User directed to the File page. <br />
 Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Positive)
@@ -99,7 +99,7 @@ And User clicks the select menu button. <br />
 And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
-And User directed to the Code page. <br />
+And User directed to the File page. <br />
 Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Positive)
@@ -115,7 +115,7 @@ When User clicks the select menu button. <br />
 And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
-And User directed to the Code page. <br />
+And User directed to the File page. <br />
 Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Negative)
@@ -134,4 +134,56 @@ And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
 Then The warning "Contents can't be empty" is appear. <br />
 
+## Feature
+As a user, I want to edit an existing gist. <br />
+### Test Scenario (Negative)
+Verify that User can edit an existing gist.
+### Test Case
+Given User has successfully login and directed to the URL https://gist.github.com/ <br />
+And User has successfully created a gist. <br />
+Then User should see his gist file <br />
+And User should see "View your gist" hyperlink text. <br />
+When User clicks the "View your gist" hyperlink text. <br />
+Then User should directed to the profile page. <br />
+And User should see "All gist" hyperlink text. <br />
+And User should see the gist name followed by the extension. <br />
+When User clicks the gist name. <br />
+Then User directed to the File page. <br />
+And User should see the Edit button. <br />
+And User should see the Delete button. <br />
+When User clicks the Edit button. <br />
+Then User should directed to the Editing page. <br />
+And User should see the "Editing" text. <br />
+And User should see the Update public gist button. <br />
+When User filled the text area with "Edit". <br />
+And User clicks the Update public gist button. <br />
+Then User directed to the File page. <br />
+And User should see the Revisions button. <br />
+When User clicks the Revisions button. <br />
+Then User should directed to the Revisions page. <br />
+And User should see "revised this gist" text. <br />
+Then User has successfully edited an existing gist. <br />
 
+## Feature
+As a user, I want to delete an existing gist. <br />
+### Test Scenario (Negative)
+Verify that User can delete an existing gist.
+### Test Case
+Given User has successfully login and directed to the URL https://gist.github.com/ <br />
+And User has successfully created a gist. <br />
+Then User should see his gist file <br />
+And User should see "View your gist" hyperlink text. <br />
+When User clicks the "View your gist" hyperlink text. <br />
+Then User should directed to the profile page. <br />
+And User should see "All gist" hyperlink text. <br />
+And User should see the gist name followed by the extension. <br />
+When User clicks the gist name. <br />
+Then User directed to the File page. <br />
+And User should see the Delete button. <br />
+When User clicks the Edit button. <br />
+Then The warning "Are you positive you want to delete this Gist?" pop up is appear. <br />
+And User should see the OK button. <br />
+And User should see the Cancel button. <br />
+When User clicks the OK button. <br />
+Then User directed to "Your gist" page. <br />
+And User should see the alert of "Gist deleted successfully." <br />
