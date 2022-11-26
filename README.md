@@ -5,5 +5,5 @@ Written test from Plato Academy
 The answer is in the Test Scenario and Test Case.md file.
 
 # Question 3
-The answer is in the register_test.js file.
+The answer is in the register_test.js file. <br />
 This automation is using Codeceptjs, please kindly check the documentation at https://codecept.io/
