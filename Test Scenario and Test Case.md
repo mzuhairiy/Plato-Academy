@@ -69,14 +69,47 @@ And User clicks the Sign in button. <br />
 Then Warning "Incorrect username or password." should appear. <br />
 
 ### Test Scenario (Positive)
-Verify that User able to create a public gist.
+Verify that User able to create a public gist with JavaScipt (.js) extension.
 ### Test Case
 Given User has successfully login and directed to the URL https://gist.github.com/ <br />
 When User clicks the "+" navigation bar. <br />
-Then User should see "Instantly share code, notes, and snippets." text. <br />
-And User should see "Create secret gist" button. <br />
+Then User should see "Create secret gist" button. <br />
 When User filled the Gist description form with "This is a description." <br />
 And User filled the Filename form with name and extension type "Plato.js" <br />
+And User filled the text area with "I wanna create a public gist" <br />
+When User clicks the select menu button. <br />
+And User clicks the "Create public gist". <br />
+And User should see the "Create public gist" button. <br />
+When User clicks the "Create public gist" button. <br />
+And User directed to the Code page. <br />
+Then User has succesfully create a public gist. <br />
+
+### Test Scenario (Positive)
+Verify that User able to create a public gist with Markdown (.md) extension.
+### Test Case
+Given User has successfully login and directed to the URL https://gist.github.com/ <br />
+When User clicks the "+" navigation bar. <br />
+Then User should see "Create secret gist" button. <br />
+When User filled the Gist description form with "This is a description." <br />
+And User filled the Filename form with name and extension type "Plato.md" <br />
+Then User should see "<>Edit new file" button. <br />
+And User should see "Preview" button. <br />
+When User filled the text area with "I wanna create a public gist" <br />
+And User clicks the select menu button. <br />
+And User clicks the "Create public gist". <br />
+And User should see the "Create public gist" button. <br />
+When User clicks the "Create public gist" button. <br />
+And User directed to the Code page. <br />
+Then User has succesfully create a public gist. <br />
+
+### Test Scenario (Positive)
+Verify that User able to create a public gist with Text (.txt) extension.
+### Test Case
+Given User has successfully login and directed to the URL https://gist.github.com/ <br />
+When User clicks the "+" navigation bar. <br />
+Then User should see "Create secret gist" button. <br />
+When User filled the Gist description form with "This is a description." <br />
+And User filled the Filename form with name and extension type "Plato.txt" <br />
 And User filled the text area with "I wanna create a public gist" <br />
 When User clicks the select menu button. <br />
 And User clicks the "Create public gist". <br />
