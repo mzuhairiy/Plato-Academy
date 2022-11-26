@@ -82,7 +82,6 @@ And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
 And User directed to the File page. <br />
-Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Positive)
 Verify that User able to create a public gist with Markdown (.md) extension.
@@ -100,7 +99,6 @@ And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
 And User directed to the File page. <br />
-Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Positive)
 Verify that User able to create a public gist with Text (.txt) extension.
@@ -116,7 +114,6 @@ And User clicks the "Create public gist". <br />
 And User should see the "Create public gist" button. <br />
 When User clicks the "Create public gist" button. <br />
 And User directed to the File page. <br />
-Then User has succesfully create a public gist. <br />
 
 ### Test Scenario (Negative)
 Verify that User unable to create a public gist.
