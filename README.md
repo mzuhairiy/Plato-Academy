@@ -6,5 +6,6 @@ The answer is in the Test Scenario and Test Case.md file.
 
 # Question 2
 
+
 # Question 3
-The answer is in the 
+The answer is in the register_test.js file.
