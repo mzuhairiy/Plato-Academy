@@ -2,7 +2,7 @@
 Written test from Plato Academy
 
 # Question 1
-The answer is in the file Test Scenario and Test Case.md
+The answer is in the Test Scenario and Test Case.md file.
 
 # Question 2
 
