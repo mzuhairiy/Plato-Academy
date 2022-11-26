@@ -72,4 +72,17 @@ Then Warning "Incorrect username or password." should appear. <br />
 Verify that User able to create a public gist.
 ### Test Case
 Given User has successfully login and directed to the URL https://gist.github.com/ <br />
-And User should see "Instantly share code, notes, and snippets."
+When User clicks the "+" navigation bar.
+Then User should see "Instantly share code, notes, and snippets." text. <br />
+And User should see "Create secret gist" button.
+When User filled the Gist description form with "This is a description."
+And User filled the Filename form with name and extension type "Plato.js"
+And User filled the text area with "I wanna create a public gist"
+When User clicks the select menu button.
+And User clicks the "Create public gist".
+And User should see the "Create public gist" button.
+When User clicks the "Create public gist" button.
+And User directed to the Code page.
+Then User has succesfully create a public gist.
+
+
