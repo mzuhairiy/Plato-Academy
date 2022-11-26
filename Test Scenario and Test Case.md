@@ -72,17 +72,33 @@ Then Warning "Incorrect username or password." should appear. <br />
 Verify that User able to create a public gist.
 ### Test Case
 Given User has successfully login and directed to the URL https://gist.github.com/ <br />
-When User clicks the "+" navigation bar.
+When User clicks the "+" navigation bar. <br />
 Then User should see "Instantly share code, notes, and snippets." text. <br />
-And User should see "Create secret gist" button.
-When User filled the Gist description form with "This is a description."
-And User filled the Filename form with name and extension type "Plato.js"
-And User filled the text area with "I wanna create a public gist"
-When User clicks the select menu button.
-And User clicks the "Create public gist".
-And User should see the "Create public gist" button.
-When User clicks the "Create public gist" button.
-And User directed to the Code page.
-Then User has succesfully create a public gist.
+And User should see "Create secret gist" button. <br />
+When User filled the Gist description form with "This is a description." <br />
+And User filled the Filename form with name and extension type "Plato.js" <br />
+And User filled the text area with "I wanna create a public gist" <br />
+When User clicks the select menu button. <br />
+And User clicks the "Create public gist". <br />
+And User should see the "Create public gist" button. <br />
+When User clicks the "Create public gist" button. <br />
+And User directed to the Code page. <br />
+Then User has succesfully create a public gist. <br />
+
+### Test Scenario (Negative)
+Verify that User unable to create a public gist.
+### Test Case
+Given User has successfully login and directed to the URL https://gist.github.com/ <br />
+When User clicks the "+" navigation bar. <br />
+Then User should see "Instantly share code, notes, and snippets." text. <br />
+And User should see "Create secret gist" button. <br />
+When User not filled the Gist description form. <br />
+And User not filled the Filename form with name and extension type. <br />
+And User not filled the text area. <br />
+When User clicks the select menu button. <br />
+And User clicks the "Create public gist". <br />
+And User should see the "Create public gist" button. <br />
+When User clicks the "Create public gist" button. <br />
+Then The warning "Contents can't be empty" is appear. <br />
 
 
